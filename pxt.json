@@ -1,0 +1,37 @@
+{
+    "name": "DDR ShakeIT Up",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "MakerBit-LCD1602": "github:1010technologies/pxt-makerbit-lcd1602#v1.6.12",
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "brightboard": "github:brightwearables/pxt-microbit-brightboard#v0.7.2",
+        "colorbit": "github:51bit/colorbit#v0.1.2",
+        "radio": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
